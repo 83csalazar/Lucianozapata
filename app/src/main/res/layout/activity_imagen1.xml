@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Imagen1">
+
+    <!-- Primer LinearLayout con fondo rojo para el Botón de Cierre (Salir) -->
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:background="#6E645B"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="ExtraText">
+
+        <!-- Botón de Cierre (Salir) -->
+        <ImageButton
+            android:id="@+id/buttonSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:src="@drawable/campanaencendida" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="141dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            tools:src="@drawable/logo" />  <!-- Ajuste para ubicar la imagen un poco más arriba -->
+            android:layout_marginStart="8dp"  <!-- Ajuste para ubicar la imagen un poco más a la izquierda -->
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">  <!-- Ajuste para ubicar el LinearLayout a la derecha de la imagen -->
+
+            <TextView
+                android:id="@+id/textViewDulceAnhelatte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DulceAnhelatte"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panel de Administración"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>    <!-- Segundo LinearLayout con fondo blanco para la fila de botones numerados -->
+    <LinearLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:layout_below="@id/firstLayout"
+        android:layout_marginTop="-3dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Contenido de la fila de botones numerados -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="95dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/btnfactura" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresar Factura"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="95dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/btningredientes" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredientes"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="95dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/btninventario" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recetas"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="95dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/btnusuario" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingresar Usuario"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:src="@drawable/btnreportes" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reporte de ventas"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="95dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/btninventario" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inventario"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Tercer LinearLayout con fondo gris sin contenido -->
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_below="@id/secondLayout"
+        android:background="#6E645B"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Sin contenido -->
+
+    </LinearLayout>
+
+    <!-- Cuarto LinearLayout con fondo anaranjado para la última fila de botones -->
+    <LinearLayout
+        android:id="@+id/fourthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_below="@id/thirdLayout"
+        android:layout_marginTop="-17dp"
+        android:background="#E67A00"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Contenido de la última fila de botones -->
+        <ImageButton
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:src="@drawable/btnhome" />
+    </LinearLayout>
+</RelativeLayout>
