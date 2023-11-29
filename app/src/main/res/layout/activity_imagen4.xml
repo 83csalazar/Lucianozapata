@@ -116,7 +116,7 @@
     <!-- Layout para botones ordenados en la parte inferior -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="269dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -232,7 +232,7 @@
     <LinearLayout
         android:id="@+id/fourthLayout"
         android:layout_width="match_parent"
-        android:layout_height="234dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="-17dp"
         android:background="#E67A00"
         android:gravity="center"
