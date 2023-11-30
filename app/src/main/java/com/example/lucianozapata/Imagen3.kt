@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class Imagen3 : AppCompatActivity() {
 
@@ -12,7 +13,7 @@ class Imagen3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_imagen3)
 
-        val btn1: Button = findViewById(R.id.button9)
+        val btn1: ImageButton  = findViewById(R.id.imageButton7)
         val btn2: Button = findViewById(R.id.button10)
         val btn3: Button = findViewById(R.id.button11)
         val btn4: Button = findViewById(R.id.button12)

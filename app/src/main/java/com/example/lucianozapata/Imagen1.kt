@@ -45,7 +45,18 @@ class Imagen1 : AppCompatActivity() {
         }
 
         btn5.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, Imagen4::class.java)
+            startActivity(intent)
+            finish()
+        }
+        btn6.setOnClickListener {
+            val intent = Intent(this, Imagen4::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        btn7.setOnClickListener {
+            val intent = Intent(this, Imagen4::class.java)
             startActivity(intent)
             finish()
         }
