@@ -240,14 +240,5 @@
         android:background="#E67A00"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="16dp">
-
-        <!-- Contenido de la última fila de botones -->
-        <ImageButton
-            android:id="@+id/button9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            tools:src="@drawable/btnhome" />
-    </LinearLayout>
+        android:padding="16dp"/>
 </RelativeLayout>
