@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Imagen1">
+    tools:context="Home">
 
     <!-- Primer LinearLayout con fondo rojo para el Botón de Cierre (Salir) -->
     <LinearLayout
@@ -19,7 +19,7 @@
 
         <!-- Botón de Cierre (Salir) -->
         <ImageButton
-            android:id="@+id/buttonSalir"
+            android:id="@+id/btn_Notificacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
@@ -83,7 +83,7 @@
                 android:layout_margin="8dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton"
+                    android:id="@+id/btn_Factura"
                     android:layout_width="95dp"
                     android:layout_height="85dp"
                     android:src="@drawable/btnfactura" />
@@ -104,7 +104,7 @@
                 android:layout_margin="8dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/btn_Ingredientes"
                     android:layout_width="95dp"
                     android:layout_height="85dp"
                     android:src="@drawable/btningredientes" />
@@ -125,7 +125,7 @@
                 android:layout_margin="8dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/btn_Recetas"
                     android:layout_width="95dp"
                     android:layout_height="85dp"
                     android:src="@drawable/btninventario" />
@@ -157,7 +157,7 @@
                 android:layout_margin="8dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton4"
+                    android:id="@+id/btn_IngrUser"
                     android:layout_width="95dp"
                     android:layout_height="85dp"
                     android:src="@drawable/btnusuario" />
@@ -178,7 +178,7 @@
                 android:layout_margin="8dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/btn_Reporte"
                     android:layout_width="wrap_content"
                     android:layout_height="85dp"
                     android:src="@drawable/btnreportes" />
@@ -199,7 +199,7 @@
                 android:layout_margin="8dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton6"
+                    android:id="@+id/btn_inventario"
                     android:layout_width="95dp"
                     android:layout_height="85dp"
                     android:src="@drawable/btninventario" />

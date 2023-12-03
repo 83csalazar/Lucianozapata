@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/fondo2"
-    tools:context=".Imagen2">
+    tools:context=".Factturas">
 
     <!-- Primer LinearLayout con fondo rojo para el Botón de Cierre (Salir) -->
     <LinearLayout
@@ -62,16 +62,16 @@
 
 
     <LinearLayout
-        android:layout_width="433dp"
-        android:layout_height="185dp"
+        android:layout_width="405dp"
+        android:layout_height="439dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:orientation="vertical">
 
-
         <com.google.android.material.tabs.TabLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
@@ -88,19 +88,7 @@
                 android:layout_height="wrap_content"
                 android:text="Wednesday" />
         </com.google.android.material.tabs.TabLayout>
-    </LinearLayout>
 
-
-    <!-- Layout para botones ordenados en la parte inferior -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="269dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <!-- EditText con título -->
-
-        <!-- ImageButton 1 con título -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -170,7 +158,7 @@
                     android:textSize="16sp" />
 
                 <ImageButton
-                    android:id="@+id/imageButton8"
+                    android:id="@+id/imageButton9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/btnagregar"
@@ -193,7 +181,7 @@
                     android:textSize="16sp" />
 
                 <ImageButton
-                    android:id="@+id/imageButton8"
+                    android:id="@+id/imageButton10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/btnagregar"
@@ -201,13 +189,40 @@
 
             </LinearLayout>
 
+
         </LinearLayout>
 
 
-        <!-- Cuarto LinearLayout con fondo anaranjado para la última fila de botones -->
     </LinearLayout>
 
+    <!-- Layout para botones ordenados en la parte inferior -->
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- ... (Código anterior) ... -->
+
+    </LinearLayout>
+
+    <!-- Cambio en la disposición de la última fila de botones a una disposición vertical -->
+    <LinearLayout
+        android:id="@+id/fourthLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-17dp"
+        android:background="#E67A00"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TextView con título -->
+
+
+        <!-- Layout para botones ordenados en la parte inferior -->
+
+        <LinearLayout
         android:id="@+id/fourthLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -228,7 +243,7 @@
 
         <!-- Contenido de la última fila de botones -->
         <ImageButton
-            android:id="@+id/button9"
+            android:id="@+id/btn_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

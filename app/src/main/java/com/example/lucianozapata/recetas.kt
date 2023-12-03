@@ -4,44 +4,46 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
-class Imagen2 : AppCompatActivity() {
+class recetas : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_imagen2)
+        setContentView(R.layout.recetas)
 
-        val btn1: Button = findViewById(R.id.button5)
-        val btn2: Button = findViewById(R.id.button6)
-        val btn3: Button = findViewById(R.id.button7)
-        val btn4: Button = findViewById(R.id.button8)
-        val btn5: Button = findViewById(R.id.buttonSalir)
+        val btn1: ImageButton = findViewById(R.id.buttonSalir)
+        val btn2: ImageButton = findViewById(R.id.imageButton7)
+        val btn3: ImageButton = findViewById(R.id.imageButton8)
+        val btn4: ImageButton = findViewById(R.id.imageButton9)
+        val btn5: ImageButton = findViewById(R.id.imageButton10)
+
 
         btn1.setOnClickListener {
-            val intent = Intent(this, Imagen2::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
             finish()
         }
 
         btn2.setOnClickListener {
-            val intent = Intent(this, Imagen2::class.java)
+            val intent = Intent(this, Factturas::class.java)
             startActivity(intent)
             finish()
         }
 
         btn3.setOnClickListener {
-            val intent = Intent(this, Imagen3::class.java)
+            val intent = Intent(this, Ingredientes::class.java)
             startActivity(intent)
             finish()
         }
 
         btn4.setOnClickListener {
-            val intent = Intent(this, Imagen4::class.java)
+            val intent = Intent(this, recetas::class.java)
             startActivity(intent)
             finish()
         }
         btn5.setOnClickListener {
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,Login::class.java)
             startActivity(intent)
             finish()
         }

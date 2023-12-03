@@ -22,22 +22,22 @@
             android:name=".Imagen5"
             android:exported="false" />
         <activity
-            android:name=".Imagen4"
+            android:name=".recetas"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".Imagen3"
+            android:name=".Ingredientes"
             android:exported="false" />
         <activity
-            android:name=".Imagen2"
+            android:name=".Factturas"
             android:exported="false" />
         <activity
-            android:name=".Imagen1"
+            android:name=".Home"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/fondo2"
-    tools:context=".Imagen2">
+    tools:context=".Factturas">
 
     <!-- Primer LinearLayout con fondo rojo para el Botón de Cierre (Salir) -->
     <LinearLayout
@@ -21,7 +21,7 @@
 
         <!-- Botón de Cierre (Salir) -->
         <ImageButton
-            android:id="@+id/buttonSalir"
+            android:id="@+id/btn_Notificacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
@@ -131,49 +131,23 @@
             android:textColor="@android:color/white"
             android:textSize="16sp" />
 
-        <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="#FFFFFF" />
     </LinearLayout>
 
     <!-- Layout para botones ordenados en la parte inferior -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="418dp"
+        android:layout_height="123dp"
         android:gravity="center"
         android:orientation="horizontal">
 
         <!-- EditText con título -->
 
         <!-- ImageButton 1 con título -->
-        <TextView
-            android:id="@+id/textViewImageButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Botón 1"
-            android:textColor="@android:color/white"
-            android:textSize="16sp" />
-
-        <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/btntrash" />
 
         <!-- ImageButton 2 con título -->
-        <TextView
-            android:id="@+id/textViewImageButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Botón 2"
-            android:textColor="@android:color/white"
-            android:textSize="16sp" />
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/btn_print"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/btnagregar" />
@@ -191,17 +165,10 @@
         android:padding="16dp">
 
         <!-- ImageButton 3 con título -->
-        <TextView
-            android:id="@+id/textViewImageButton3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Botón 3"
-            android:textColor="@android:color/white"
-            android:textSize="16sp" />
 
         <!-- Contenido de la última fila de botones -->
         <ImageButton
-            android:id="@+id/button9"
+            android:id="@+id/btn_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
-class MainActivity : AppCompatActivity() {
+class Login : AppCompatActivity() {
 
     private lateinit var usernameEditText: EditText
     private lateinit var passwordEditText: EditText
@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.login)
 
         usernameEditText = findViewById(R.id.usernameEditText)
         passwordEditText = findViewById(R.id.passwordEditText)
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
             if (username == "profe" && password == "123456") {
                 // Credenciales válidas, redirigir a la actividad Imagen1.
-                val intent = Intent(this, Imagen1::class.java)
+                val intent = Intent(this, Home::class.java)
                 startActivity(intent)
                 finish() // Cierra la actividad MainActivity
             } else {
