@@ -173,7 +173,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textViewImageButton3"
+                    android:id="@+id/textViewImageButton4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Botón 3"
@@ -223,29 +223,29 @@
         <!-- Layout para botones ordenados en la parte inferior -->
 
         <LinearLayout
-        android:id="@+id/fourthLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-17dp"
-        android:background="#E67A00"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="16dp">
-
-        <!-- ImageButton 3 con título -->
-        <TextView
-            android:id="@+id/textViewImageButton3"
-            android:layout_width="wrap_content"
+            android:id="@+id/fourthLayout3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Botón 3"
-            android:textColor="@android:color/white"
-            android:textSize="16sp" />
+            android:layout_marginTop="-17dp"
+            android:background="#E67A00"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <!-- Contenido de la última fila de botones -->
-        <ImageButton
-            android:id="@+id/btn_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            tools:src="@drawable/btnhome" />
-    </LinearLayout>
+            <!-- TextView con título -->
+            <TextView
+                android:id="@+id/textViewImageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Botón 3"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Contenido de la última fila de botones -->
+            <ImageButton
+                android:id="@+id/btn_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:src="@drawable/btnhome" />
+        </LinearLayout>
