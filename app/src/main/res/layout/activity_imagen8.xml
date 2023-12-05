@@ -239,3 +239,5 @@
                 android:layout_gravity="center"
                 tools:src="@drawable/btnhome" />
         </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
